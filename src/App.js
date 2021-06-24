@@ -1,5 +1,5 @@
-import './App.css';
-// import WelcomePage from './pages/WelcomePage';
+import './App.scss';
+import WelcomePage from './pages/WelcomePage';
 import { BrowserRouter as Router, Route, NavLink, Link, Switch } from 'react-router-dom';
 import HomePage from './pages/HomePage';
 import AboutPage from './pages/AboutPage';
