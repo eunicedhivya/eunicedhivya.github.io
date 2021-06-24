@@ -4,7 +4,7 @@ import { faGithub, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-ic
 
 function WelcomePage() {
     return (
-        <div class="container">
+        <div className="container">
             <main>
                 <h1 className="main-title">Coming Soon</h1>
                 <nav className="socialmenu">
