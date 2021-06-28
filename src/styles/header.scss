@@ -1,0 +1,65 @@
+header {
+  background-color: $base-white;
+  height: 100%;
+  width: 20%;
+  position: fixed;
+  //   padding: 15px 40px;
+  text-align: center;
+
+  .site-logo-section {
+    width: 100%;
+    margin: 25px auto 100px auto;
+    text-align: center;
+    padding: 0 40px;
+
+    .site-logo {
+      background-color: $content-bg;
+    }
+    .site-tagline {
+      font-size: 0.6rem;
+      letter-spacing: 0.02rem;
+    }
+  }
+
+  .nav-items {
+    list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px ​10px;
+        display: block;
+        line-height: 35px;
+        color: $base-blue;
+      }
+
+      background-color: $base-white;
+
+      &:hover {
+        transition: all 0.5s ease-in-out;
+        background-color: $base-blue;
+        a {
+          color: $base-white;
+        }
+      }
+      .active {
+        background-color: $base-blue;
+        color: $base-white;
+      }
+    }
+  }
+
+  .site-footer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 260px;
+
+    .copyright {
+      font-size: 14px;
+    }
+  }
+}

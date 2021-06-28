@@ -1,0 +1,21 @@
+.main-content {
+  width: 80%;
+  margin-left: 20%;
+  .notfound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    h1 {
+      font-size: 20rem;
+      font-weight: 900;
+      line-height: 18rem;
+      color: $base-blue;
+    }
+    p {
+      font-size: 30px;
+      letter-spacing: 12px;
+    }
+  }
+}

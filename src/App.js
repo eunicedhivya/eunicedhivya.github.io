@@ -12,7 +12,6 @@ function App() {
     <div className="App">
       {/* <WelcomePage />  */}
       <Header />
-      
       <div className="main-content">
           <div className="content">
           <Switch>
