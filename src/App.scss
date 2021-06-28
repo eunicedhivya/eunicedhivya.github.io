@@ -1,1 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
 
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Lato", sans-serif;
+}
+
+$base-blue: #2b4c90;
+$base-purple: #a14a9b;
+$base-white: #ffffff;
+$content-bg: #e8e8e8;
+//Primary Blue #2b4c90
+//Primary Purple #a14a9b
+
+body {
+  background-color: $content-bg;
+}
+
+.btn {
+  padding: 10px 15px;
+  border-radius: 37px;
+  color: #fff;
+  text-decoration: none;
+  margin-bottom: 15px;
+  display: block;
+}
+.primary-btn-color {
+  background-color: $base-blue;
+}
+
+header {
+  background-color: $base-white;
+  height: 100%;
+  width: 100%;
+  max-width: 350px;
+  position: fixed;
+  padding: 15px 40px;
+  text-align: center;
+
+  .site-logo-section {
+    width: 100%;
+    margin: 25px auto 100px auto;
+    text-align: center;
+
+    .site-logo {
+      background-color: $content-bg;
+    }
+    .site-tagline {
+      font-size: 0.6rem;
+      letter-spacing: 0.02rem;
+    }
+  }
+
+  .nav-items {
+    list-style: none;
+  }
+
+  .site-footer {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100%;
+    max-width: 260px;
+
+    .copyright {
+      font-size: 14px;
+    }
+  }
+}
+
+.main-content {
+  width: calc(100% - 350px);
+  margin-left: 350px;
+}
