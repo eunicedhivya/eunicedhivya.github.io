@@ -36,13 +36,14 @@ header {
   width: 100%;
   max-width: 350px;
   position: fixed;
-  padding: 15px 40px;
+  //   padding: 15px 40px;
   text-align: center;
 
   .site-logo-section {
     width: 100%;
     margin: 25px auto 100px auto;
     text-align: center;
+    padding: 0 40px;
 
     .site-logo {
       background-color: $content-bg;
@@ -55,6 +56,30 @@ header {
 
   .nav-items {
     list-style: none;
+
+    li {
+      a {
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 5px ​10px;
+        display: block;
+        line-height: 35px;
+        color: $base-blue;
+      }
+
+      &:hover {
+        transition: all 0.2s ease-in-out;
+        background-color: $base-blue;
+        a {
+          color: $base-white;
+        }
+        animation: createBox 0.25s;
+      }
+      .active {
+        background-color: $base-blue;
+        color: $base-white;
+      }
+    }
   }
 
   .site-footer {
@@ -71,7 +96,36 @@ header {
   }
 }
 
+@keyframes fadeIn {
+  from {
+    opacity: 0.5;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .main-content {
   width: calc(100% - 350px);
   margin-left: 350px;
+  .notfound {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+    h1 {
+      font-size: 20rem;
+      font-weight: 900;
+      line-height: 18rem;
+      color: $base-blue;
+    }
+    p {
+      font-size: 30px;
+      letter-spacing: 12px;
+    }
+  }
+}
+
+.notfound {
 }
