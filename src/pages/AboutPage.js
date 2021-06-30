@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import Title from '../components/Title';
 
 function AboutPage() {
     return (
-        <div className="about">
-            About Page
+        <div className="pages about">
+            <Title title={'About me'} span={'About me'} />  
         </div>
     )
 }
