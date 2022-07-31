@@ -1,0 +1,125 @@
+#home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    /* background-image: var(--subtle-pattern); */
+}
+
+#home h1 {
+    font-size: 65px;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0;
+    margin-bottom: 10px;
+}
+#home p{
+    font-size: 20px;
+    font-weight: 400;
+    max-width: 700px;
+    margin-bottom: 20px;
+}
+#home .nav__list{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    list-style: none;
+    column-gap: 30px;
+    margin-top: 30px;
+}
+#home .nav__list a{
+    text-decoration: none;
+    color: #000;
+    text-align: center;
+    
+}
+
+#home .nav__list a .icon-text{
+    background-color: #000;
+    color: #fff;
+    padding:2px 5px;
+    font-size: 10px;
+    border-radius: 20px;
+}
+#home .nav__list a .hover-icon, #home .nav__list a .icon-text{
+    transition: all .5s ease-in-out;
+}
+#home .nav__list a .icon-text{
+    opacity: 0;
+    transform: translateY(10px);
+    display: block;
+}
+#home .nav__list a .icon-text::before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: 50%;
+    width: 0;
+    border-bottom: 7px solid black;
+    border-left: 7px solid transparent;
+    border-right: 7px solid transparent;
+    transform: translateX(-50%);
+  }
+#home .nav__list a:hover .icon-text{
+   opacity: 1;transform: translateY(5px);
+}
+#home .nav__list a .icon-text{
+    display: block;
+}
+
+
+.scroll__down{
+    position:absolute;
+    bottom:2.5rem;
+    left: 0;
+    width: 100%;
+  }
+.scroll__down a{
+    text-decoration: none;
+  }
+  
+  .home__scroll-name{
+    font-size: 12px; text-decoration: none; color: #000;
+  }
+  
+  .mouse{
+    border: 2px solid #000;
+    display: block;
+    height: 1.6rem;
+    width: 1.25rem;
+    margin: auto;
+    margin-top: .75rem;
+    border-radius: 1rem;
+    position: relative;
+  }
+  
+  .wheel{
+    background-color: #000;
+    border-radius: 100%;
+    width: 0.25rem;
+    height: 0.25rem;
+    position: absolute;
+    top: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
+    animation: ani-mouse 2s linear infinite;
+  }
+  
+  @keyframes ani-mouse {
+    0%{
+     top: 29%;
+    }
+    15%{
+     top: 50%;
+    }
+    50%{
+     top: 50%;
+    }
+    100%{
+     top: 29%;
+    }
+   
+  }
