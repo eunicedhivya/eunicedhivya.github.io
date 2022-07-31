@@ -96,6 +96,10 @@ body { background-image: var(--subtle-pattern);}
     margin-bottom: 1.2rem;
 }
 
+.section {
+    padding: 5rem 0;
+}
+
 
 @media (max-width: 600px) {
     .App {

@@ -143,9 +143,9 @@
         font-size: 25px;}
     #home .nav__list a .icon-text {
         font-size: 16px;}
-    .home__content{
-        margin-top: -20px;
-    }
+        .home__content {
+            margin-top: calc( 230px - 100%);
+        }
 }
 
   
