@@ -1,4 +1,5 @@
 // import React from 'react';
+import "./welcomepage.css";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin, faCodepen } from '@fortawesome/free-brands-svg-icons';
 

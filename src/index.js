@@ -2,12 +2,19 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import WelcomePage from './pages/maintenancepage/WelcomePage';
 // import reportWebVitals from './reportWebVitals';
-
+const maintenanceMode = false;
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
+  <div>
+    {maintenanceMode ? (
+        <WelcomePage />
+      ) : (
+        <App />
+      )}
+    
+    
+  </div>,
   document.getElementById('root')
 );
 
