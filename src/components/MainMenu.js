@@ -1,34 +1,32 @@
 import React from 'react'
+import MenuItem from './MenuItem'
 
 function MainMenu() {
   return (
     <ul className='nav__list'>
-                    <li className="nav__item">
-                      <a href="#home" className="nav__link">
-                        <span className="icon-home hover-icon"></span>
-                        <span className="icon-text">Home</span>
-                      </a>
-                    </li>
-                    <li className="nav__item">
-                      <a href="#about" className="nav__link">
-                        <span className="icon-user hover-icon"></span>
-                        <span className="icon-text">About</span>
-                      </a>
-                    </li>
-                    <li className="nav__item">
-                      <a href="#portfolio" className="nav__link">
-                        <span className="icon-briefcase hover-icon"></span>
-                        <span className="icon-text">Portfolio</span>
-                      </a>
-                    </li>
-                    <li className="nav__item">
-                      <a href="#contact" className="nav__link">
-                        <span className="icon-envelope hover-icon"></span>
-                        <span className="icon-text">Contact</span>
-                      </a>
-                    </li>
+                <li className="nav__item site-branding">
+                    ED
+                </li>
+                    <MenuItem 
+                    iconclass="icon-home hover-icon" 
+                    icontext="Home" 
+                    anchorlink="#home"  />
+                    <MenuItem 
+                    iconclass="icon-user hover-icon" 
+                    icontext="About" 
+                    anchorlink="#about"  />
+                    <MenuItem 
+                    iconclass="icon-briefcase hover-icon" 
+                    icontext="Portfolio" 
+                    anchorlink="#portfolio"  />
+                    <MenuItem 
+                    iconclass="icon-envelope hover-icon" 
+                    icontext="Contact" 
+                    anchorlink="#contact"  />
                   </ul>
   )
 }
 
 export default MainMenu
+
+

@@ -63,9 +63,9 @@
     top: -8px;
     left: 50%;
     width: 0;
-    border-bottom: 9px solid var(--primary-color);
-    border-left: 9px solid transparent;
-    border-right: 9px solid transparent;
+    border-bottom: 10px solid var(--primary-color);
+    border-left: 6px solid transparent;
+    border-right: 6px solid transparent;
     transform: translateX(-50%);
   }
 #home .nav__list a:hover .icon-text{
@@ -89,6 +89,8 @@
   .home__scroll-name{
     font-size: 12px; text-decoration: none; color: var(--primary-color);
   }
+
+  
   
   .mouse{
     border: 2px solid var(--primary-color);
@@ -130,7 +132,11 @@
   }
 
 
+
+
+
 @media (max-width: 600px) {
+
     #home h1 {
         line-height: 60px;
     }

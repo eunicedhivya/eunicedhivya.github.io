@@ -1,0 +1,26 @@
+[
+    {
+        "title": "Mars 2020: All you need to know about NASA’s mission to Red Planet",
+        "description": "This is a WAN-IFRA South Asia gold award (2020) winning interactive for best data visualisation. This is the seocnd time we recieved an award for this category in a row. Perseverance is designed to search for astrobiological evidence of ancient microbial life on Mars and will land in Jezero Crater on February 18, 2021. Here is an interactive graphic to know more about the mission. Use the button below to navigate.",
+        "publisher": "The Federal",
+        "featuredimg": "https://shutterdragon.github.io/img/thumbnails/mars-2020-mission.jpg",
+        "url": "https://shutterdragon.github.io/mars-2020-mission/",
+        "category": "Interactive"
+    },
+    {
+        "title": "Interactive graphic: Chandrayaan 2, India’s ambitious mission to moon",
+        "description": "This is a WAN-IFRA South Asia silver award (2019) winning interactive for best data visualisation. This visualises the second ambitious Indian moon mission consisting of an Orbiter, Lander, Rover. Visit this interactive where we have tried out 3js for the first time.",
+        "publisher": "The Federal",
+        "featuredimg": "https://shutterdragon.github.io/img/thumbnails/chandrayaan-2-mission.jpg",
+        "url": "https://thefederal.com/features/2019/07/13/interactive-graphic-chandrayaan-2-indias-ambitious-mission-to-moon/",
+        "category": "Interactive"
+    },
+    {
+        "title": "Interactive: Coronavirus Live world dashboard",
+        "description": "This is a live tracker of the Coronavirus numbers from around the world and in-depth numbers from India. Sourced from various official portals, this is a one-stop dashboard to be updated about the on-going crisis. Access the dashboard to learn more.",
+        "publisher": "The Federal",
+        "featuredimg": "https://shutterdragon.github.io/img/thumbnails/coronavirus-live-dashboard.jpg",
+        "url": "https://thefederal.com/health/interactive-know-the-coronavirus-stats-here/",
+        "category": "Interactive"
+    }
+]

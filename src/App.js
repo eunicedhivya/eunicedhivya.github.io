@@ -9,33 +9,40 @@ import { useState, useEffect } from 'react';
 
 function App() {
 
+  const [homeNavPos, setHomeNavPos] = useState(0);
   const [sticky, setSticky] = useState(false);
-    
 
+  useEffect(() => {
+    window.addEventListener("scroll", makeSticky);
+
+    // const innerContent = document.getElementById("home-nav");
+    // let innerContentPos = innerContent.getBoundingClientRect().top;
+    
+    // console.log(innerContentPos);
+    // setHomeNavPos(innerContentPos);
+
+    // return () => {
+    //   window.removeEventListener("scroll", makeSticky);
+    // };
+
+  }, []);
+    
     const makeSticky = () => {
-      const innerContent = document.getElementById("innerContent");
-      let innerContentPos = innerContent.offsetTop - 50;
-      // let innerContentPos = innerContent.getBoundingClientRect().top + 300;
-        // console.log(innerContentPos);
-        if(window.scrollY >= innerContentPos){
+        // console.log(homeNavPos);
+        
+        if(window.scrollY >= homeNavPos){
             setSticky(true);
         }else{
             setSticky(false);
         }
     }
 
-    useEffect(() => {
-      window.addEventListener("scroll", makeSticky);
-  
-      return () => {
-        window.removeEventListener("scroll", makeSticky);
-      };
-    }, []);
+    
   
 
   return (
     <div className="App">
-      <Home />
+      <Home sticky={sticky} />
       <div id="innerContent">
         <Sidebar sticky={sticky} />
         <main className={sticky? "site-content shift" : "site-content" }>
