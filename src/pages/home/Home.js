@@ -6,7 +6,7 @@ import './home.css';
 function Home({ sticky }) {
   return (
     <section className="" id="home">
-      <div className="home__content">
+      <div className="home__content" id="homeContent">
         <h1>Eunice Dhivya</h1>
         <p>I’m a fullstack developer specializing in designing and developing dashboards and interactive stories.</p>
         <nav className={sticky? "home-nav sticky" : "home-nav" } id="home-nav">

@@ -15,22 +15,22 @@ function App() {
   useEffect(() => {
     window.addEventListener("scroll", makeSticky);
 
-    // const innerContent = document.getElementById("home-nav");
-    // let innerContentPos = innerContent.getBoundingClientRect().top;
+    const innerContent = document.getElementById("homeContent");
+    let innerContentPos = innerContent.getBoundingClientRect().bottom;
     
     // console.log(innerContentPos);
-    // setHomeNavPos(innerContentPos);
+    setHomeNavPos(innerContentPos);
 
-    // return () => {
-    //   window.removeEventListener("scroll", makeSticky);
-    // };
+    return () => {
+      window.removeEventListener("scroll", makeSticky);
+    };
 
   }, []);
     
     const makeSticky = () => {
         // console.log(homeNavPos);
         
-        if(window.scrollY >= homeNavPos){
+        if(window.scrollY >= 300){
             setSticky(true);
         }else{
             setSticky(false);
